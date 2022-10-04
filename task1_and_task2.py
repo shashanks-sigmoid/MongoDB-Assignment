@@ -14,13 +14,14 @@ collections_name = ["comments", "movies", "sessions", "theaters", "users"]
 # task2 - Load each data set in respective collection.
 dbnames = client.list_database_names()
 
+print("shashank")
 if 'AssignmentMongoDB' not in dbnames:
 
     for collection in collections_name:
 
         item_list = []
 
-        with open(f'mflix_data/{collection}.json') as f:
+        with open(f"./mflix_data/{collection}.json") as f:
 
             for json_obj in f:
 
