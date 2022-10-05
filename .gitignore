@@ -7,6 +7,7 @@ __pycache__/
 # C extensions
 *.so
 shashank/
+shashank-env/
 
 # Distribution / packaging
 .Python
