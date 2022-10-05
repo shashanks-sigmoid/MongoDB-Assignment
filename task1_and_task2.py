@@ -15,6 +15,7 @@ collections_name = ["comments", "movies", "sessions", "theaters", "users"]
 # task2 (method 1 - using python, mongoDB query) - Load each data set in respective collection.
 dbnames = client.list_database_names()
 
+
 if 'AssignmentMongoDB' not in dbnames:
 
     for collection in collections_name:
@@ -57,12 +58,16 @@ if 'AssignmentMongoDB' not in dbnames:
 
 ## comments collection creation
 # os.system('mongoimport --db AssignmentMongoDB --collection comments --file mflix_data/comments.json')
+
 ## movies collection creation
 # os.system('mongoimport --db AssignmentMongoDB --collection movies --file mflix_data/movies.json')
+
 ## theaters collection creation
 # os.system('mongoimport --db AssignmentMongoDB --collection theaters --file mflix_data/theaters.json')
+
 ## users collection creation
 # os.system('mongoimport --db AssignmentMongoDB --collection users --file mflix_data/users.json')
+
 ## sessions collection creation
 # os.system('mongoimport --db AssignmentMongoDB --collection sessions --file mflix_data/sessions.json')
 
