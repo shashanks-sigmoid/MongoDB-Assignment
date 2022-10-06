@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-# Task-4b - Queries for comment collection
+# Task-4b - Queries for movies collection
 
 # Task-4b(a) - Find top `N` movies -
 # i) with the highest IMDB rating
@@ -223,6 +223,6 @@ if __name__ == "__main__":
     client = MongoClient("mongodb://localhost:27017")
 
     # collection
-    movies = client.shop3.movies
+    movies = client.AssignmentMongoDB.movies
 
     queries(movies)
